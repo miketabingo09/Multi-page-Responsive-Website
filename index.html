@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/b71cc109cc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Multi-page Responsive Website</title>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-md sticky-top ps-3 shadow-5-strong">
+        <div class="navbar-brand">
+            <a href="#" class="brand">
+                <img src="assets/images/uPLAY-f.png" alt="logo">
+            </a>
+        </div>
+        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="btn">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link mx-2 my-1 text-white">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#service" class="nav-link mx-2 my-1 text-white">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#review" class="nav-link mx-2 my-1 text-white">TESTIMONIALS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#plan" class="nav-link mx-2 my-1 text-white" >PLANS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link mx-2 my-1 text-white" >ABOUT</a>
+                </li>
+            </ul>
+            <div class="contact me-auto">
+                <a href="#contact" class="text-white btn btn-danger">
+                    CONTACT
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Carousel -->
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active c-item">
+                <img src="assets/images/guitar1.jpg" class="w-100 c-img" alt="g1">
+                <div class="carousel-caption d-flex flex-column justify-content-center top-0 mt-4">
+                    <div class="c-cap">
+                        <h1 class="text-center">"DISCOVER THE UNKNOWN"</h1>
+                        <h2 class="fs-5">"We knew that each of us has a talent that we can't discover, but through us you may uncover your hidden talent in music."</h2>
+                    </div>
+                    <div>
+                        <a href="learn.html" class="btn btn-danger mt-2">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="assets/images/pexels-bryan-geraldo-586415.jpg" class="w-100 c-img" alt="p1">
+                <div class="carousel-caption d-flex flex-column justify-content-center top-0 mt-4">
+                    <div class="c-cap">
+                        <h1>"CONNECT TO MUSIC"</h1>
+                        <h2 class="fs-5">"We knew that each of us has a talent that we can't discover, but through us you may uncover your hidden talent in music."</h2>
+                    </div>
+                    <div>
+                        <a href="learn.html" class="btn btn-danger mt-2">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item c-item">
+                <img src="assets/images/drum1.jpg" class="d-block w-100 c-img" alt="d1">
+                <div class="carousel-caption d-flex flex-column justify-content-center top-0 mt-4">
+                    <div class="c-cap">
+                        <h1>"BE DIFFERENT"</h1>
+                        <h2 class="fs-5">"We knew that each of us has a talent that we can't discover, but through us you may uncover your hidden talent in music."</h2>
+                    </div>
+                    <div>
+                        <a href="learn.html" class="btn btn-danger mt-2">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="service-container pb-5">
+        <!-- text -->
+        <h2 class="text-center fs-1 h2 my-3 services"  id="service">SERVICES</h2>
+        <!-- services -->
+        <div class="container p-0">
+            <div class="card mb-3" style="max-width: 1300px ">
+                <div class="row g-0">
+                    <div class="col-md-4 s-img">
+                        <img src="assets/images/guitart.jpg" class="img-fluid rounded-start" alt="guitart">
+                    </div>
+                    <div class="col-md-8 bg-black text-white p-3 rounded-end">
+                        <div class="card-body">
+                            <h2 class="card-title">GUITAR LESSON</h2>
+                            <p class="card-text">For beginners, lessons may start with basic techniques such as proper hand position, finger placement, and posture. Students may also learn how to read sheet music and understand basic music theory concepts, such as rhythm and melody.</p>  
+                            <a href="#" class="text-white text-decoration-none" data-bs-toggle="modal" data-bs-target="#readGuitar">
+                                <p>Read More 
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </p>
+                            </a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#applyGuitar">
+                                <span>Apply Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 1300px ">
+                <div class="row g-0">
+                    <div class="col-md-8 bg-dark text-white p-3 rounded-start">
+                        <div class="card-body">
+                            <h2 class="card-title">PIANO LESSON</h2>
+                            <p class="card-text">Our Lesson for beginner's may start with basic techniques such as proper posture, hand position, and picking technique. Students may also learn how to read guitar tablature and sheet music, and how to tune their instrument.</p>  
+                            <a href="#" class="text-white text-decoration-none" data-bs-toggle="modal" data-bs-target="#readPiano">
+                                <p>Read More 
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </p>
+                            </a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#applyPiano">
+                                <span>Apply Now</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 s-img">
+                        <img src="assets/images/pianot.jpg" class="img-fluid rounded-end" alt="pianot">
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 1300px ">
+                <div class="row g-0">
+                    <div class="col-md-4 s-img">
+                        <img src="assets/images/drummert.jpg" class="img-fluid rounded-start" alt="drumt">
+                    </div>
+                    <div class="col-md-8 bg-black text-white p-3 rounded-end" data-bs-toggle="modal" data-bs-target="#readDrum">
+                        <div class="card-body">
+                            <h2 class="card-title">DRUM LESSON</h2>
+                            <p class="card-text">For beginners, lessons may start with basic techniques such as proper grip, posture, and coordination exercises. Students may also learn how to read drum notation and understand basic rhythmic concepts, such as time signatures and subdivisions.</p>  
+                            <a href="#" class="text-white text-decoration-none">
+                                <p>Read More 
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </p>
+                            </a>
+                            <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#applyDrum">
+                                <span>Apply Now</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="review-container">
+        <!-- text -->
+        <h2 class="text-center fs-1 h2 ps-5 " id="review">TESTIMONIALS</h2>
+        <!-- Testimonials-->
+        <div class="container-fluid d-flex t-content">
+            <div class="tes1 p-lg-5 p-sm-0 w-auto">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>"I have been taking music lessons with my instructor for the past year, and I can confidently say that it has been one of the best decisions I've made. Before starting my lessons, I had zero experience with playing an instrument and felt intimidated by the idea of learning something new. However, my instructor has been incredibly patient, knowledgeable, and supportive throughout the entire process.</p>
+                <div class="tn d-flex mt-lg-5 mt-sm-2 w-auto">
+                    <img src="assets/images/pic1.jpg" alt="ts1">
+                    <div class="d-flex flex-column ps-3 mb-2">
+                        <h4>MIKA MILLERS</h4>
+                        <h6>Batch 12 Student</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="tes2 p-lg-5 p-sm-0">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Thanks to their guidance and expertise, I have made significant progress in my playing abilities and have developed a newfound passion for music. Not only have I learned how to play an instrument, but I have also gained a deeper understanding and appreciation for different genres and styles of music.</p>
+                <div class="tn d-flex mt-lg-5 mt-sm-2">
+                    <img src="assets/images/pic3.jpg" alt="ts2">
+                    <div class="d-flex flex-column ps-3 mg-2">
+                        <h4>MIGUEL FERNANDEZ</h4>
+                        <h6>Batch 15 Student</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Plans -->
+    <div class="p-container pb-2">
+        <h2 class="text-center fs-1 text-white h2 pt-4" id="plan">PLANS</h2>
+        <div class="p-content d-flex justify-content-evenly">
+            <div class="card c-plan mt-3 border-0" style="width: 15rem;">
+                <div class="card-body bg-black text-white rounded" data-bs-toggle="modal" data-bs-target="#readShort">
+                    <h3 class="card-title text-danger">
+                        3 Month Plan
+                    </h3>
+                    <hr>
+                    <p class="card-text">Involves learning basic techniques and fundamentals of playing an instrument, such as scales, chords, and music theory. </p>
+                </div>
+            </div>
+            <div class="card c-plan mt-3 border-0" style="width: 15rem;">
+                <div class="card-body bg-black text-white rounded " data-bs-toggle="modal" data-bs-target="#readMedium">
+                    <h3 class="card-title text-danger">
+                        6 Month Plan
+                    </h3>
+                    <hr>
+                    <p class="card-text">Involves building on the foundational skills learned in the short-term and expanding upon them to play more complex pieces and develop a personal style.</p>
+                </div>
+            </div>
+            <div class="card c-plan mt-3 bg-black text-white" style="width: 15rem;">
+                <div class="card-body rounded" data-bs-toggle="modal" data-bs-target="#readLong">
+                    <h3 class="card-title text-danger">
+                        1 Year Plan
+                    </h3>
+                    <hr>
+                    <p class="card-text">Focuses on continued growth and refinement of skills and style, as well as exploring different genres and expanding one's musical horizons.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="text-danger">
+            <p class="text-center pt-4">Avail 1-day trial now!</p>
+        </a>
+    </div>
+    
+    <div class="about-container">
+    <!-- text -->
+    <div class="a-container">
+        <h2 class="text-center fs-1 h2 py-1" id="about">ABOUT US</h2>
+    </div>
+    <!-- About US-->
+    <!-- instructor -->
+    <div class="container mb-5">
+        <div class="card mb-3" style="max-width: 1300px">
+            <div class="row g-0">
+                <div class="col-md-4 s-img">
+                    <img src="assets/images/chris.jpg" class="img-fluid rounded-start" alt="guitart">
+                </div>
+                <div class="col-md-8 bg-black text-white p-3 rounded-end">
+                    <div class="card-body">
+                        <h2 class="card-title">CHRIS EVANS</h2>
+                        <hr>
+                        <h4>GUITAR INSTRUCTOR</h4>
+                        <p class="card-text">Our guitar instructor typically has a strong musical background, with many years of experience playing the guitar. He studied music in college or university, He learned through self-study and practice.</p>  
+                        <a href="https://en.wikipedia.org/wiki/Chris_Evans_(actor)" class="btn btn-danger">
+                            <span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 1300px">
+            <div class="row g-0">
+                <div class="col-md-8 bg-dark
+                 text-white p-3 rounded-start">
+                    <div class="card-body">
+                        <h2 class="card-title">TONY STARK</h2>
+                        <hr>
+                        <h4>PIANO INSTRUCTOR</h4>
+                        <p class="card-text">A great piano instructor who have a solid understanding of music theory. This includes knowledge of scales, chords, and other musical concepts that are essential to playing the piano.</p>  
+                        <a href="https://en.wikipedia.org/wiki/Tony_Stark_(Marvel_Cinematic_Universe)" class="btn btn-danger">
+                            <span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 s-img">
+                    <img src="assets/images/tony.jpg" class="img-fluid rounded-end" alt="guitart">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 1300px">
+            <div class="row g-0">
+                <div class="col-md-4 s-img">
+                    <img src="assets/images/cocoo.jpg" class="img-fluid rounded-start" alt="guitart">
+                </div>
+                <div class="col-md-8 bg-black text-white p-3 rounded-end">
+                    <div class="card-body">
+                        <h2 class="card-title">CARDO DALISAY</h2>
+                        <hr>
+                        <h4>DRUM INSTRUCTOR</h4>
+                        <p class="card-text">Our great drum instructor have a solid understanding of music theory. This includes knowledge of rhythm, tempo, and other musical concepts that are essential to playing the drums.Our great drum instructor have a passion for music and a desire to share their knowledge and he plays infinitely like an immortal man. </p>  
+                        <a href="https://ang-probinsyano.fandom.com/wiki/Ricardo_Dalisay" class="btn btn-danger">
+                            <span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OUR VISION -->
+    <div class="value-container d-flex">
+        <div class="v-left p-lg-5 p-sm-3">
+            <img src="assets/images/vision pic.png" alt="vision">
+        </div>
+        <div class="v-right pt-lg-4 pt-sm-3">
+            <h2 class="text-white p-lg-5 p-sm-0">OUR VISION</h2>
+            <div class="v-paragraph bg-white">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>All of us at uPlay wants each and every individuals who comes and join us become a talented individual who loves music and specially be happy in life with the talent that they have discovered.</p>
+            </div>
+        </div>
+    </div>
+        
+</div>
+    <!-- text -->
+    <h2 class="text-center fs-1 text-dark h2 my-5" id="contact">CONTACT US</h2>
+    <h3 class="text-center text-secondary mt-2 mb-5">Any question or remarks? Just write us a message!</h3>
+    <!-- contact us -->
+    <div class="container mb-5 shadow-lg">
+        <form action="#" class="row">
+            <div class="contact bg-dark text-white col-lg-5 col-sm-12 rounded-start p-5">
+                <h3 class="text-white fs-2">Contact Information</h3>
+                <h5 class="text-secondary">Fill up the form and our Team will get back to you within 24 hours.</h5>
+                <div class="icon fs-5 my-4">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+639 45 325 8214</span>
+                </div>
+                <div class="icon fs-5 my-4">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>uplay@gmail.com</span>
+                </div>
+                <div class="icon fs-5 my-4">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Manila, Philippines</span>
+                </div>
+                <div class="icons">
+                    <h3>Follow us on:</h3>
+                    <a href="https://www.facebook.com/" class="btn btn-light fs-4 px-3 me-4 mt-1">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=en" class="btn btn-light fs-4 px-3  me-4  mt-1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="btn btn-light fs-4 px-3 me-4 mt-1">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="input col-lg-7 col-sm-12 rounded-end bg-light fs-5">
+                <div class="row1 row my-5">
+                    <div class="form-floating col w-auto">
+                        <input type="text" class="form-control" id="floatingFirst" placeholder="First Name">
+                        <label for="floatingFirst"> First Name</label>
+                    </div>
+                    <div class="form-floating col w-auto">
+                        <input type="text" class="form-control" id="floatingLast" placeholder="Last Name">
+                        <label for="floatingLast"> Last Name</label>
+                    </div>
+                </div>
+                <div class="row2 row">
+                    <div class="form-floating col w-auto">
+                        <input type="email" class="form-control" id="floatingEmail" placeholder="First Name">
+                        <label for="floatingEmail"> Email Address</label>
+                    </div>
+                    <div class="form-floating col w-auto">
+                        <input type="tel" class="form-control" id="floatingTel" placeholder="Contact Number">
+                        <label for="floatingTel"> Contact Number</label>
+                    </div>
+                </div>
+                <div class="row3 mt-5 mb-4">
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                </div>
+                <div class="row4 d-flex justify-content-end">
+                    <a href="#" class="btn btn-danger px-4 py-2 fs-5 my-3 me-5">Send Message</a>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+    <hr>
+    <!-- modal for apply guitar -->
+    <div class="modal fade" id="applyGuitar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Application Form</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="userName">Name:</label>
+                            <input type="text" class="form-control mt-2" name="userName" id="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="userAddress">Address:</label>
+                            <input type="text" class="form-control mt-2" name="userAddress" id="userAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="userNumber">Contact Number:</label>
+                            <input type="tel" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address:</label>
+                            <input type="email" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Instrument:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option selected value="cod">Guitar Lesson</option>
+                                <option value="gcash">Piano Lesson</option>
+                                <option value="paymaya">Drum Lesson</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Plans:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">3 Month Plan</option>
+                                <option value="gcash">6 Month Plan</option>
+                                <option value="paymaya">1 Year Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Preferred Class:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod"></option>
+                                <option value="gcash">Face to Face Class</option>
+                                <option value="paymaya">Online Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Payment Method:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">Cash on site</option>
+                                <option value="gcash">Gcash</option>
+                                <option value="paymaya">Paymaya</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger text-white
+                    ">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for apply piano -->
+    <div class="modal fade" id="applyPiano" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Application Form</h5>
+                    <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="userName">Name:</label>
+                            <input type="text" class="form-control mt-2" name="userName" id="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="userAddress">Address:</label>
+                            <input type="text" class="form-control mt-2" name="userAddress" id="userAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="userNumber">Contact Number:</label>
+                            <input type="tel" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address:</label>
+                            <input type="email" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Instrument:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option value="cod">Guitar Lesson</option>
+                                <option selected value="gcash">Piano Lesson</option>
+                                <option value="paymaya">Drum Lesson</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Plans:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">3 Month Plan</option>
+                                <option value="gcash">6 Month Plan</option>
+                                <option value="paymaya">1 Year Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Preferred Class:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod"></option>
+                                <option value="gcash">Face to Face Class</option>
+                                <option value="paymaya">Online Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Payment Method:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">Cash on site</option>
+                                <option value="gcash">Gcash</option>
+                                <option value="paymaya">Paymaya</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for apply drum -->
+    <div class="modal fade" id="applyDrum" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-white bg-dark">
+                    <h5 class="modal-title">Application Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="userName">Name:</label>
+                            <input type="text" class="form-control mt-2" name="userName" id="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="userAddress">Address:</label>
+                            <input type="text" class="form-control mt-2" name="userAddress" id="userAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="userNumber">Contact Number:</label>
+                            <input type="tel" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address:</label>
+                            <input type="email" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Instrument:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option value="cod">Guitar Lesson</option>
+                                <option value="gcash">Piano Lesson</option>
+                                <option selected value="paymaya">Drum Lesson</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Plans:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">3 Month Plan</option>
+                                <option value="gcash">6 Month Plan</option>
+                                <option value="paymaya">1 Year Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Preferred Class:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod"></option>
+                                <option value="gcash">Face to Face Class</option>
+                                <option value="paymaya">Online Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Payment Method:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">Cash on site</option>
+                                <option value="gcash">Gcash</option>
+                                <option value="paymaya">Paymaya</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for applynow -->
+    <div class="modal fade" id="applyNow" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Application Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="userName">Name:</label>
+                            <input type="text" class="form-control mt-2" name="userName" id="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="userAddress">Address:</label>
+                            <input type="text" class="form-control mt-2" name="userAddress" id="userAddress" >
+                        </div>
+                        <div class="form-group">
+                            <label for="userNumber">Contact Number:</label>
+                            <input type="tel" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email Address:</label>
+                            <input type="email" class="form-control mt-2" name="userNumber" id="userNumber">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Instrument:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">Guitar Lesson</option>
+                                <option value="gcash">Piano Lesson</option>
+                                <option value="paymaya">Drum Lesson</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Plans:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">3 Month Plan</option>
+                                <option value="gcash">6 Month Plan</option>
+                                <option value="paymaya">1 Year Plan</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Preferred Class:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod"></option>
+                                <option value="gcash">Face to Face Class</option>
+                                <option value="paymaya">Online Class</option>
+                            </select>
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="payment">Payment Method:</label>
+                            <select name="form-control" id="payment" class="rounded px-4 py-2 w-100 mt-2">
+                                <option disabled selected>Select</option>
+                                <option value="cod">Cash on site</option>
+                                <option value="gcash">Gcash</option>
+                                <option value="paymaya">Paymaya</option>
+                                <option value="bank">Bank Transfer</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for read more -->
+    <div class="modal fade" id="readGuitar" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Guitar Lesson Coverage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>For beginners, lessons may start with basic techniques such as proper posture, hand position, and picking technique. Students may also learn how to read guitar tablature and sheet music, and how to tune their instrument.</li>
+                        <li>As students progress, lessons may cover more advanced techniques such as fingerpicking, chord progressions, scales, and music theory. Students may also learn about different genres of music, such as rock, blues, jazz, and classical, and how to play songs in those styles.</li>
+                        <li>Some guitar lessons may also focus on improvisation and songwriting, helping students develop their own musical ideas and styles. In addition, guitar lessons may cover topics such as recording and production, helping students learn how to record and produce their own music.</li>
+                        <li>Overall, guitar lessons can provide a comprehensive education in the instrument, helping students develop their skills and achieve their musical goals.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#applyGuitar">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="readPiano" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Piano Lesson Coverage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>For beginners, lessons may start with basic techniques such as proper posture, hand position, and picking technique. Students may also learn how to read guitar tablature and sheet music, and how to tune their instrument.</li>
+                        <li>As students progress, lessons may cover more advanced techniques such as fingerpicking, chord progressions, scales, and music theory. Students may also learn about different genres of music, such as rock, blues, jazz, and classical, and how to play songs in those styles.</li>
+                        <li>Some guitar lessons may also focus on improvisation and songwriting, helping students develop their own musical ideas and styles. In addition, guitar lessons may cover topics such as recording and production, helping students learn how to record and produce their own music.</li>
+                        <li>Overall, guitar lessons can provide a comprehensive education in the instrument, helping students develop their skills and achieve their musical goals.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#applyPiano">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="readDrum" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">Drum Lesson Coverage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>For beginners, lessons may start with basic techniques such as proper posture, hand position, and picking technique. Students may also learn how to read guitar tablature and sheet music, and how to tune their instrument.</li>
+                        <li>As students progress, lessons may cover more advanced techniques such as fingerpicking, chord progressions, scales, and music theory. Students may also learn about different genres of music, such as rock, blues, jazz, and classical, and how to play songs in those styles.</li>
+                        <li>Some guitar lessons may also focus on improvisation and songwriting, helping students develop their own musical ideas and styles. In addition, guitar lessons may cover topics such as recording and production, helping students learn how to record and produce their own music.</li>
+                        <li>Overall, guitar lessons can provide a comprehensive education in the instrument, helping students develop their skills and achieve their musical goals.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#applyDrum">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal for plan -->
+    <div class="modal fade" id="readShort" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">3 Month Plan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Short-term music lesson coverage usually involves focusing on a specific area of study for a short period of time. For example, a short-term lesson plan may focus on a particular technique, such as fingerpicking on the guitar, or a specific piece of music, such as a classical sonata. Short-term music lesson coverage may be helpful for students who want to refine a specific skill or prepare for a performance.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#applyNow">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="readMedium" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">6 Month Plan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Medium-term music lesson coverage involves a broader focus, typically spanning several weeks or months. Medium-term lesson plans may include multiple techniques or pieces of music, and may incorporate a variety of musical genres. Medium-term music lesson coverage may be helpful for students who want to build a strong foundation in their instrument or explore different musical styles.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#applyNow">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="readLong" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title">1 Year Plan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Long-term music lesson coverage is designed for students who want to develop a deep understanding of their instrument and achieve mastery over a long period of time. Long-term lesson plans may span several years or more, and may cover a wide range of topics, from technique and theory to performance and composition. Long-term music lesson coverage may be helpful for students who want to pursue a career in music or become professional musicians.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#applyNow">Apply Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer d-flex justify-content-evenly">
+            <div class="logo d-flex align-items-center flex-column w-100">
+                <img src="assets/images/uPLAY (2).png" alt="logo">
+                <p class="p-2">uPlay website has been made for those who wants to know all about uPlay company and on how we develop talents.</p>
+            </div>
+            <div class="w-100 d-flex flex-column align-items-center">
+                <h4 class="text-center">Join our community!</h4>
+                <div class="d-flex">
+                    <a href="https://www.facebook.com/" class="btn btn-light fs-4 px-3 mt-1">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=en" class="btn btn-light fs-4 px-3 mt-1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="btn btn-light fs-4 px-3  mt-1">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <p class="text-center">
+                    "You can avail benefits by joining any of our communities."
+                </p>
+            </div>
+            <div class="w-100 d-flex flex-column align-items-center">
+                <h4>Branches</h4>
+                <p>
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Seoul, Korea
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Tokyo, Japan
+                </p>
+                <p>
+                    <i class="fa-solid fa-location-dot text-danger"></i>
+                    Paris, France
+                </p>
+            </div>
+        </div>
+        <div>
+            <p class="text-secondary text-center">Copyright © 2021 All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>  
+</body>
+</html>

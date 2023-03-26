@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,500&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+}  
+.navbar-brand img{
+    height: 60px;
+    width: auto;
+}
+nav {
+    background-color: rgb(11, 11, 11);
+}
+.c-item {
+    height: 650px;
+}
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.c-cap h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.nav-item {
+    transition: .20s;
+}
+.nav-item:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 200px;
+}
+.p-container{
+    background-color: rgb(41, 44, 47);
+}
+.p-content:hover > :not(:hover) {
+    opacity: .4;
+    transform: scale(0.9);
+
+}
+.c-plan {
+    transition: .35s;
+    cursor: pointer;
+}
+
+
+.s-img img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.card img{
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+.value-container {
+    background-color: rgb(41, 44, 47);
+}
+.v-left img {
+    width: auto;
+    height: 500px;
+}
+.v-right h2{
+    font-size: 50px;
+}
+.v-paragraph {
+    font-size: 32px;
+    padding: 30px 30px 30px 30px;
+    width: auto;
+}
+
+h2 {
+    width: auto;
+}
+.contact {
+    width: auto;
+
+}
+.input {
+    width: auto;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+}
+.tn img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+@media (max-width: 1100px) {
+    .value-container {
+        flex-wrap: wrap;
+    }
+    .v-left {
+        padding: 0;
+    }
+    .v-left img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+    }
+    .t-content {
+        flex-wrap: wrap;
+    }
+    .row .card {
+        width: auto;
+    }
+    .p-content {
+        flex-wrap: wrap;
+    }
+    .v-paragraph {
+        font-size: 22px;
+    }
+    .v-right {
+        padding-top: 0;
+    }
+}
+@media (max-width: 400px) {
+    .c-cap h1{
+        font-size: 30px;
+    }
+}
+
